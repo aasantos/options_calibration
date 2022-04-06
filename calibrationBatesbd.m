@@ -82,8 +82,8 @@ function [X,FVAL,EXITFLAG,OUTPUT,LAMBDA,GRAD,HESSIAN] = calibrationBatesbd(callt
     end
     %    
     %
-    lb = [0.01    0.01  0.2    0.01  -1  -1  0.01   0.1];
-    ub = [2.0     2.0   50.0   2.0    0   1  1.0   20.0];
+    lb = [0.01    0.01  0.2    0.01  -1  -1  0.01   0.01];
+    ub = [2.0     2.0   50.0   2.0    0   1  2.0   20.0];
     %
     %
     options = optimoptions('fmincon','Display','iter', ...
