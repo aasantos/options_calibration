@@ -1,0 +1,7 @@
+load('callputMar14_18.mat');
+%% run estimation of Bates model
+[XM,FVALM,EXITFLAGM,OUTPUTM,LAMBDAM,GRADM,HESSIANM] = ...
+    calibrationMertonbd(ctable,ptable);
+%% save data
+save('mertonout.mat','XM','FVALM','EXITFLAGM','OUTPUTM','LAMBDAM','GRADM','HESSIANM');
+%%
